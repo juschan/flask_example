@@ -5,7 +5,7 @@ from flask import Flask, request, Response, render_template, jsonify
 
 app = Flask('myApp')
 # load model here!!!
-model_that_was_pickled = pickle.load(open('../assets/model.p', 'rb'))
+model_that_was_pickled = pickle.load(open('./assets/model.p', 'rb'))
 
 # route 1: hello world
 @app.route('/')
@@ -67,12 +67,3 @@ def make_predictions():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
-
-
-
-
-
-
-
-
