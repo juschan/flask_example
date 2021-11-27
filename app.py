@@ -60,7 +60,7 @@ def make_predictions():
     price = model_that_was_pickled.predict(data3)[0]
     
     # if you're desperate, you can always calculate directly from coefficients
-    price = 32968.7974 * data[0] + 17719.2556 * data[1] + 82.6078 * data[2] + 1.8704 * data[3] 
+    #price = 32968.7974 * data[0] + 17719.2556 * data[1] + 82.6078 * data[2] + 1.8704 * data[3] 
     
     return jsonify({'saleprice' :  price})
     #return "<html><body><p>The house price is predicted to be $" + price "</p></body></html>"
